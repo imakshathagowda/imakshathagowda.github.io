@@ -18,17 +18,21 @@
       <p>Cybersecurity Professional</p>
       <a href="Resume_AkshathaK.pdf" class="resume-btn" download>📄 Download Resume</a>
       <nav class="navbar">
-        <button onclick="showSection('about')">About</button>
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('experience')">Experience</button>
-        <button onclick="showSection('skills')">Skills</button>
-        <button onclick="showSection('certifications')">Certifications</button>
-        <button onclick="showSection('awards')">Awards</button>
-        <button onclick="showSection('contact')">Contact</button>   
-      </nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="menu-links" id="menu">
+    <button onclick="showSection('about'); toggleMenu()">About</button>
+    <button onclick="showSection('projects'); toggleMenu()">Projects</button>
+    <button onclick="showSection('experience'); toggleMenu()">Experience</button>
+    <button onclick="showSection('skills'); toggleMenu()">Skills</button>
+    <button onclick="showSection('certifications'); toggleMenu()">Certifications</button>
+    <button onclick="showSection('awards'); toggleMenu()">Awards</button>
+    <button onclick="showSection('contact'); toggleMenu()">Contact</button>
+  </div>
+</nav>
     </div>
   </header>
 
+  
   <main>
     <section id="about" class="section active">
       <h2>About Me</h2>
