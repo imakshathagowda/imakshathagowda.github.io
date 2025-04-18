@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshatha K | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+
+  <header class="hero">
+    <div class="intro">
+      <h1>Akshatha K</h1>
+      <p>Cybersecurity Professional</p>
+      <a href="Resume_AkshathaK.pdf" class="resume-btn" download>📄 Download Resume</a>
+      <nav class="navbar">
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('experience')">Experience</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('education')">Education</button>
+        <button onclick="showSection('certifications')">Certifications</button>
+        <button onclick="showSection('awards')">Awards</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section active" style="display:block" style="display:block">
+      <h2>About Me</h2>
+      <p>Cybersecurity professional with 2.6 years of experience specializing in secure software development, vulnerability management, and threat mitigation. Demonstrated success in improving product security by 25% and reducing risk exposure by 30% through robust security initiatives. Proven ability to drive compliance with industry standards, implement risk mitigation strategies, and foster cross-functional collaboration. Seeking to contribute to secure product development in future cybersecurity role...
+    </section>
+    <section id="experience" class="section" style="display:none">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Engineer I – Honeywell</h3>
+            <span>Sep 2021 – Mar 2024</span>
+            <ul>
+              <li>Led security advocacy for releases and patches, improved security by 25%.</li>
+              <li>Collaborated on pentesting, ensured 100% compliance.</li>
+              <li>Resolved DLL hijacking, enforced CFG, reduced attack surface by 50%.</li>
+              <li>Managed Black Duck scans, reduced OSS risk by 30%.</li>
+              <li>Integrated Allgovision, met security and compliance standards.</li>
+              <li>Created documentation, improved customer support satisfaction by 20%.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Cybersecurity Intern – NPCI</h3>
+            <span>2021</span>
+            <ul>
+              <li>Reviewed PCI DSS, NIST, CIS-based security policies.</li>
+              <li>Performed malware analysis via VirusTotal.</li>
+              <li>Executed SYN scans with Nmap to detect vulnerabilities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section" style="display:none">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>🔍 VAPT</h3>
+          <p>Simulated scanning, enumeration, Nessus, and exploitation via Metasploit.</p>
+          <a href="https://github.com/imakshathagowda/Vulnerability-Assessment-and-Penetration-Testing-VAPT">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>💉 WebGoat SQLi</h3>
+          <p>SQL injection attack lab using OWASP WebGoat.</p>
+          <a href="https://github.com/imakshathagowda/WebGoat-SQL-Injection-Assessment">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>💣 Meterpreter Exploitation</h3>
+          <p>Remote exploitation using Msfvenom payloads + Metasploit.</p>
+          <a href="https://github.com/imakshathagowda/exploitation-using-meterpreter">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>🛡 Ransomware Playbook</h3>
+          <p>Documented ransomware response lifecycle for blue team use.</p>
+          <a href="https://github.com/imakshathagowda/ransomware-incident-playbook">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>📊 Security Scan & Logs</h3>
+          <p>Nmap + Burp Suite scans and log analysis walkthrough.</p>
+          <a href="https://github.com/imakshathagowda/security-scanning-and-log-analysis">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>🔐 Password Policy</h3>
+          <p>Audited password settings across corporate infrastructure.</p>
+          <a href="https://github.com/imakshathagowda/password-policy-compliance-analysis">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>🐞 Malware & Vulnerability</h3>
+          <p>Malware behavior tracing + risk mitigation via Hybrid Analysis.</p>
+          <a href="https://github.com/imakshathagowda/malware-analysis-and-vulnerability-assessment">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>🔧 VPN Troubleshooting</h3>
+          <p>Fixed tunneling and cert trust failures during VPN deployment.</p>
+          <a href="https://github.com/imakshathagowda/vpn-and-certificate-troubleshooting">GitHub</a>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section" style="display:none">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span>SDLC</span><span>Secure SDLC</span><span>Threat Modeling</span><span>OpenVAS</span><span>OWASP Top 10</span>
+        <span>Risk Assessment</span><span>Metasploit</span><span>Burp Suite</span><span>Nessus</span><span>Nmap</span>
+        <span>PCI DSS</span><span>NIST</span><span>CIS</span><span>Black Duck</span><span>Python</span><span>Linux</span>
+        <span>Java</span><span>C#</span><span>GitHub</span><span>JIRA</span>
+      </div>
+    </section>
+    <section id="education" class="section" style="display:none">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Advanced Executive Program in Cybersecurity</strong> – IIITB, Sep 2024</li>
+        <li><strong>B.E. Computer Science</strong> – VTU, 2021 (CGPA: 8.13)</li>
+        <li>12th – New Baldwin, 2017 (76.83%)</li>
+        <li>10th – Swamy Vivekananda School, 2015 (90.40%)</li>
+      </ul>
+    </section>
+    <section id="certifications" class="section" style="display:none">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Software Security Practitioner (Architect), ISC² – May 2023</li>
+        <li>NPCI Cybersecurity Virtual Internship – Sep 2024</li>
+        <li>Java Full Stack – Pentagon Space – 2022</li>
+        <li>Simplilearn – Enterprise Infra Security, App Sec, Malware, VAPT</li>
+      </ul>
+    </section>
+    <section id="awards" class="section" style="display:none">
+      <h2>Awards & Recognition</h2>
+      <ul>
+        <li>Bronze – Best Scrum Member: Boosted team efficiency by 30%</li>
+        <li>Bronze – Commitment to Cybersecurity: Enforced strong security protocol adherence</li>
+      </ul>
+    </section>
+    <section id="contact" class="section" style="display:none">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:imakshathagowda@gmail.com">imakshathagowda@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/imakshathagowda">github.com/imakshathagowda</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/akshathakgowda">linkedin.com/in/akshathakgowda</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Akshatha K — Cybersecurity Portfolio</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
