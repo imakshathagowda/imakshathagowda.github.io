@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshatha K | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="intro">
+    <h1>Akshatha K</h1>
+    <p>Cybersecurity Professional</p>
+    <button onclick="window.open('Resume_AkshathaK.pdf')">📄 Resume</button>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="menu-links" id="menu">
+        <button onclick="showSection('about'); toggleMenu()">About</button>
+        <button onclick="showSection('projects'); toggleMenu()">Projects</button>
+        <button onclick="showSection('experience'); toggleMenu()">Experience</button>
+        <button onclick="showSection('skills'); toggleMenu()">Skills</button>
+        <button onclick="showSection('certifications'); toggleMenu()">Certifications</button>
+        <button onclick="showSection('awards'); toggleMenu()">Awards</button>
+        <button onclick="showSection('contact'); toggleMenu()">Contact</button>
+      </div>
+    </nav>
+  </header>
+  <!-- Add actual sections here -->
+</body>
+</html>
