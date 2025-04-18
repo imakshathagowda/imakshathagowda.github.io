@@ -6,22 +6,23 @@ function toggleTheme() {
 function showSection(id) {
   const allSections = document.querySelectorAll('.section');
   allSections.forEach(section => {
-    section.style.display = 'none';
     section.classList.remove('active');
   });
 
-  const selected = document.getElementById(id);
-  if (selected) {
-    selected.style.display = 'block';
-    selected.offsetHeight; // Force reflow to ensure visibility
-    selected.classList.add('active');
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    setTimeout(() => {
+      ScrollReveal().clean(target);
+      ScrollReveal().reveal(target.querySelectorAll('*'), { interval: 100, origin: "bottom" });
+    }, 100);
   }
 }
 
-window.onload = () => {
-  showSection('about'); // Default section
-};
+window.onload = () => showSection('about');
+
 
 document.addEventListener("DOMContentLoaded", () => {
   ScrollReveal({ reset: false, duration: 900, distance: "40px", easing: "ease-in-out" });
