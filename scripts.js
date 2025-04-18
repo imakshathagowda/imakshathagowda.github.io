@@ -9,6 +9,11 @@ function showSection(id) {
     section.classList.remove('active');
     section.style.display = 'none';
   });
+  
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
 
   const target = document.getElementById(id);
   if (target) {
