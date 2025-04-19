@@ -212,18 +212,6 @@ button:hover {
 
 
 /* Hero Section Background + Punchline */
-.intro {
-  background: linear-gradient(120deg, #fef3c7, #fde68a, #fff);
-  text-align: center;
-  padding: 3rem 1rem;
-  transition: background 0.4s ease;
-  animation: fadeIn 0.8s ease-out;
-}
-
-body.dark .intro {
-  background: linear-gradient(120deg, #1e293b, #0f172a);
-  color: white;
-}
 
 .punchline {
   font-size: 1.1rem;
