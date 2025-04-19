@@ -43,7 +43,14 @@ body.dark .hero {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
+
+.resume-btn:hover {
+  background-color: #eab308;
+  transform: scale(1.05);
+}
+
 .navbar {
   margin-top: 1.5rem;
 }
@@ -237,37 +244,39 @@ body.dark .punchline {
   background-color: transparent; /* matches other sections */
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.social-icons a {
+.social-full {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
-  font-size: 0.9rem;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-full a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
   color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.social-icons img {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 0.3rem;
-  transition: transform 0.3s ease;
+.social-full img {
+  width: 24px;
+  height: 24px;
 }
 
-.social-icons img:hover {
-  transform: scale(1.2);
+.social-full a:hover {
+  color: #1e40af;
+  transform: scale(1.03);
 }
 
-body.dark .social-icons a {
+/* Dark mode */
+body.dark .social-full a {
   color: #facc15;
 }
+
 
 
 .contact-box {
