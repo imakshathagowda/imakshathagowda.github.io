@@ -239,7 +239,7 @@ body.dark .punchline {
 
 
 .contact-box {
-  background-color: #fffbea;
+  background-color: #fde68a; /* matching light theme */
   display: inline-block;
   padding: 1.5rem 2rem;
   border-radius: 12px;
@@ -248,6 +248,7 @@ body.dark .punchline {
   line-height: 1.8;
   margin-top: 1rem;
   animation: fadeIn 1s ease-out;
+  color: #111;
 }
 
 .contact-box a {
@@ -259,11 +260,12 @@ body.dark .punchline {
   text-decoration: underline;
 }
 
-body.dark .contact {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+/* Match dark theme */
+body.dark .contact-box {
+  background-color: #1e293b;
+  color: #fff;
 }
 
-body.dark .contact-box {
-  background-color: #2c3e50;
-  color: #fff;
+body.dark .contact-box a {
+  color: #93c5fd;
 }
