@@ -183,3 +183,62 @@ body.dark footer {
     transform: translateY(0);
   }
 }
+
+
+button {
+  background-color: #fde68a;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #facc15;
+  transform: scale(1.05);
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+/* Hero Section Background + Punchline */
+.intro {
+  background: linear-gradient(120deg, #fef3c7, #fde68a, #fff);
+  text-align: center;
+  padding: 3rem 1rem;
+  transition: background 0.4s ease;
+  animation: fadeIn 0.8s ease-out;
+}
+
+body.dark .intro {
+  background: linear-gradient(120deg, #1e293b, #0f172a);
+  color: white;
+}
+
+.punchline {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+body.dark .punchline {
+  color: #ddd;
+}
+
+/* Subtle fade-in on hero load */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
