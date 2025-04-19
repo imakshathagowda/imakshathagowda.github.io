@@ -110,9 +110,10 @@ body.dark .tags span {
   color: #facc15;
 }
 footer {
+  background-color: #fef3c7; /* pastel yellow or whatever your light background is */
+  color: #000;
   text-align: center;
-  padding: 1.5rem;
-  background: #f1f5f9;
+  padding: 1rem;
 }
 body.dark footer {
   background: #1e293b;
