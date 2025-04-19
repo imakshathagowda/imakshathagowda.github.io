@@ -291,3 +291,25 @@ body.dark .contact-box {
 body.dark .contact-box a {
   color: #93c5fd;
 }
+
+/* ===== Experience Section Styles ===== */
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.job-dates {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #666;
+}
+
