@@ -209,8 +209,6 @@ button:hover {
   margin-top: 1rem;
 }
 
-
-
 /* Hero Section Background + Punchline */
 
 .punchline {
@@ -229,4 +227,42 @@ body.dark .punchline {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #fef3c7, #fff);
+  transition: background 0.4s ease;
+}
+
+.contact-box {
+  background-color: #fffbea;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.contact-box a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+body.dark .contact {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+body.dark .contact-box {
+  background-color: #2c3e50;
+  color: #fff;
 }
