@@ -25,6 +25,32 @@ function toggleMenu() {
   menu.classList.toggle("show");
 }
 
+button {
+  background-color: #fde68a;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #facc15;
+  transform: scale(1.05);
+}
+
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+
 /* Hero Section Background + Punchline */
 .intro {
   background: linear-gradient(120deg, #fef3c7, #fde68a, #fff);
