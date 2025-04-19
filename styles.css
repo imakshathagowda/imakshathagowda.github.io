@@ -237,6 +237,38 @@ body.dark .punchline {
   background-color: transparent; /* matches other sections */
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+body.dark .social-icons a {
+  color: #facc15;
+}
+
 
 .contact-box {
   background-color: #fef3c7; /* matching light theme */
