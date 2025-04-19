@@ -57,45 +57,7 @@ body.dark .punchline {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.resume-buttons {
-  margin: 1rem auto;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 
-.resume-buttons button {
-  background-color: #fde68a;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
 
-.resume-buttons button:hover {
-  background-color: #facc15;
-  transform: scale(1.05);
-}
 
-.resume-preview {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.resume-preview iframe {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-body.dark .resume-preview iframe {
-  border: 1px solid #444;
-  background: #1e293b;
-}
 
