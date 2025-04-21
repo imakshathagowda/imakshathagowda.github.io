@@ -127,12 +127,13 @@ body.dark footer {
 }
 
 /* Mobile Responsive Hamburger Menu */
+
 .menu-toggle {
   display: none;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.4rem 1rem;
-  background: #facc15; /* pastel yellow from your theme */
+  background: #facc15; /* pastel yellow - your theme */
   color: #111;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -166,17 +167,12 @@ body.dark footer {
     align-items: center;
     background: #fff;
     position: absolute;
-    top: 100%;
+    top: 3.5rem; /* 👈 Pushes menu below toggle */
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 998;
     padding: 1rem;
     border-top: 1px solid #ddd;
-  }
-
-  .menu-links.show {
-    display: flex;
-    animation: fadeSlideIn 0.3s ease-in-out;
   }
 
   body.dark .menu-links {
@@ -184,12 +180,16 @@ body.dark footer {
     border-top: 1px solid #444;
   }
 
+  .menu-links.show {
+    display: flex;
+    animation: fadeSlideIn 0.3s ease-in-out;
+  }
+
   .navbar {
     position: relative;
   }
 }
 
-/* Subtle animation */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -200,6 +200,14 @@ body.dark footer {
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+
+/*   ###    */
 
 
 button {
