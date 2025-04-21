@@ -126,36 +126,50 @@ body.dark footer {
   background: #1e293b;
 }
 
-/* Mobile Responsive Hamburger Menu */
+
+/* ===== MOBILE RESPONSIVE MENU & THEME TOGGLE ===== */
 
 .menu-toggle {
   display: none;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.4rem 1rem;
-  background: #facc15; /* pastel yellow - your theme */
-  color: #111;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  z-index: 999;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem; /* ⬅️ Menu on left */
+  background: #facc15;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  z-index: 1001;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .menu-toggle:hover {
   transform: scale(1.05);
 }
 
-.menu-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  transition: all 0.3s ease;
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem; /* ➡️ Theme toggle on right */
+  font-size: 1.5rem;
+  background: #facc15;
+  color: #111;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1002;
+  transition: background 0.3s ease;
 }
 
+body.dark .theme-toggle {
+  background: #334155;
+  color: #facc15;
+}
+
+/* Responsive behavior */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -165,14 +179,14 @@ body.dark footer {
     display: none;
     flex-direction: column;
     align-items: center;
-    background: #fff;
-    position: absolute;
-    top: 3.5rem; /* 👈 Pushes menu below toggle */
+    background: #fffaf0;
+    position: fixed;
+    top: 4rem; /* 👇 Push below the toggle */
     left: 0;
     right: 0;
-    z-index: 998;
+    z-index: 1000;
     padding: 1rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
   }
 
   body.dark .menu-links {
@@ -182,7 +196,7 @@ body.dark footer {
 
   .menu-links.show {
     display: flex;
-    animation: fadeSlideIn 0.3s ease-in-out;
+    animation: fadeSlideIn 0.3s ease-out;
   }
 
   .navbar {
@@ -190,17 +204,17 @@ body.dark footer {
   }
 }
 
+/* Animation */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 
 
 
