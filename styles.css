@@ -129,20 +129,23 @@ body.dark footer {
 /* Mobile Responsive Hamburger Menu */
 .menu-toggle {
   display: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 0.4rem 1rem;
-  border-radius: 6px;
-  background: #facc15; /* Matches your site theme */
+  background: #facc15; /* pastel yellow from your theme */
   color: #111;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 999;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .menu-toggle:hover {
   transform: scale(1.05);
 }
-
 
 .menu-links {
   display: flex;
